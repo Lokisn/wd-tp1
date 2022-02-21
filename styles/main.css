@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+
+:root {
+  /*Police*/
+  --police-principale: "";
+  --police-titres: ` "Cookie";
+
+  /* Palette de couleurs */
+
+  /* Mesures */
+}
+
+/* Base */
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
