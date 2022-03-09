@@ -32,7 +32,7 @@
                     <div class="texte-article trois-quart">
                         <!-- Récupération des articles (titre, contenu)-->
                         <h3><?php the_title(); ?></h3>
-                        <p><?php the_excerpt(); ?> <a href="<?=the_permalink();?>"> En savoir plus... </a> </p>
+                        <p><?php the_excerpt();?> <a href="<?=the_permalink();?>"> En savoir plus... </a> </p>
                         <p><?php the_tags()?></p>
                     </div>
 
@@ -57,4 +57,3 @@
         </div>
 
 <?php get_footer( ) ?>
-

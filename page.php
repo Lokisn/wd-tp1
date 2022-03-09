@@ -1,12 +1,12 @@
 <?php get_header()?>
 
-    <div>
+    <div class="flex">
 
-        <section>
+        <section class="trois-quart">
             <?php get_template_part( 'templates/generic-loop'); ?>
         </section>
 
-        <section>
+        <section class="quart sidebar">
             <?php get_sidebar(  ); ?>
         </section>
 
