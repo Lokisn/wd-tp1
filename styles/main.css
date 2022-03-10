@@ -2,14 +2,14 @@
 
 :root {
   /*Polices*/
-  --police-principale: "Lato";
-  --police-titres: "Merriweather Sans";
+  --police-principale: "Roboto";
+  --police-titres: "poppins";
 
   /*Palette de couleurs*/
   --clr-principale: #212e53;
   --clr-accent: #bed3c3;
-  --clr-sombre: #111;
-  --clr-claire: #efefef;
+  --clr-sombre: #1a1d22;
+  --clr-claire: #c6efff;
 
   /*Mesures*/
   --largeur-contenus: 85%;
@@ -36,6 +36,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--police-principale);
+  color: var(--clr-claire);
+  background-color: var(--clr-sombre);
   min-height: 100vh;
 }
 
@@ -49,7 +51,7 @@ h6 {
 }
 
 a {
-  color: #666;
+  color: var(--clr-claire);
 }
 
 .conteneur {
@@ -108,12 +110,11 @@ header {
 }
 
 header h1 {
-  text-transform: uppercase;
   margin: 0;
 }
 
 h1 a {
-  color: #222;
+  color: var(--clr-claire);
   text-decoration: none;
 }
 /* Menus */
@@ -133,17 +134,17 @@ h1 a {
 .menu a {
   display: block;
   text-decoration: none;
-  color: #222;
+  color: var(--clr-claire);
   padding: 5px 10px;
-  font-weight: bold;
+  font-weight: normal;
   transition: all 300ms ease;
   border-radius: 3px;
 }
 
 .menu a:hover {
-  background-color: #333;
-  color: #efefef;
-  font-weight: normal;
+  background-color: #272727;
+  color: var(--clr-claire);
+  font-weight: bold;
 }
 
 /* Contenus */
