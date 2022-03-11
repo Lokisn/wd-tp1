@@ -106,7 +106,7 @@ input {
 header {
   height: 150px;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 header h1 {
@@ -125,6 +125,17 @@ h1 a {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* li des catégories */
+.cat-item {
+  text-align: center;
+  font-size: 1.4em;
+  padding: 2px;
 }
 
 .menu li {
@@ -170,10 +181,11 @@ h1 a {
 }
 
 footer {
-  height: 120px;
-  border-top: 1px solid #ccc;
-  margin-top: auto;
-  text-align: right;
+  height: 80px;
+  border-top: 3px solid #ccc;
+  margin-top: 30px;
+  text-align:center;
+  font-size: 1em;
 }
 
 @media screen and (max-width: 768px) {

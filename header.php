@@ -20,7 +20,7 @@
             <nav class="flex v-aligne">
                 <?php 
                     $args = array(
-                        'theme_location' => 'main_menu'
+                        'theme_location' => 'main_menu',
                     );
 
                     wp_nav_menu($args);
