@@ -2,23 +2,35 @@
 
     <h2>Résultat(s) de la recherche</h2>
 
-        <?php if(have_posts( )) : ?>
-                <?php while(have_posts( )) : the_post(  ); ?>
+    <div class="flex">
+            <section class="trois-quart">
 
-                    <article class="flex">
-                        <!-- Le contenu de l'article -->
-                        <div class="texte-article">
-                        <h2><?php the_title(); ?></h2>
-                        <p><?php the_excerpt( );?> <a href="<?=the_permalink();?>"> En savoir plus... </a> </p>
-                        </div>
-                    </article>
+            <?php if(have_posts( )) : ?>
+            <?php while(have_posts( )) : the_post(  ); ?>
 
-                    <?php endwhile;?>
+                <article class="flex">
 
-                <?php else : ?>
+                    <div class="quart">
 
-                <p>Aucun résultat existant</p>
+                        <?php if(has_post_thumbnail(  )) : ?>
+                            
+                            <?php the_post_thumbnail('small', ['class' => 'fluide']); ?>
 
+                        <?php endif; ?>
+
+                    </div>
+
+                    <div class="texte-article trois-quart">
+                        <h3><?php the_title(); ?></h3>
+                        <p><?php the_excerpt();?> <a href="<?=the_permalink();?>"> En savoir plus... </a> </p>
+                        <p><?php the_tags()?></p>
+                    </div>
+
+                </article>
+
+            <?php endwhile;?>
             <?php endif; ?>
+            </section>
+        </div>
         
 <?php get_footer()?>
