@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Gabarit accueil
+Template Name: Gabarit artiste
 */
 ?>
 

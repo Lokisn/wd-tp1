@@ -31,7 +31,7 @@
 
     <div class="conteneur flex align-right">
         <form action="<?php echo esc_url(home_url('/'))?>" methods="get">
-            <input type="text" name="s" placeholder="Rechercher">
+            <input type="text" name="s" placeholder="🔍Rechercher">
         </form>
     </div>
 

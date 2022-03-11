@@ -107,6 +107,10 @@ header {
   height: 150px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
+  background-image: url(../Header_background.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
 header h1 {
@@ -116,6 +120,11 @@ header h1 {
 h1 a {
   color: var(--clr-claire);
   text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+h1 a:hover {
+  color: #31c7ff ;
 }
 /* Menus */
 
@@ -146,15 +155,14 @@ ul {
   display: block;
   text-decoration: none;
   color: var(--clr-claire);
-  padding: 5px 10px;
+  padding: 6px 10px;
   font-weight: normal;
   transition: all 300ms ease;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .menu a:hover {
-  background-color: #272727;
-  color: var(--clr-claire);
+  background-color: #393939;
   font-weight: bold;
 }
 
