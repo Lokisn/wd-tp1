@@ -1,7 +1,7 @@
 </main>
     <footer>
         <div>
-            <p><?php bloginfo( 'name' )?>, tous droits réservés &copy<?php echo(date("Y/M")) ?></p>
+            <p><b><?php bloginfo( 'name' )?>, tous droits réservés &copy<?php echo(date("Y/M")) ?></b></p>
         </div>
     </footer>
     <?php wp_footer(  )?>
