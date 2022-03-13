@@ -4,16 +4,16 @@ Template Name: Gabarit accueil
 */
 ?>
 
-<?php get_header();?>
+    <?php get_header();?>
 
 <?php
-
+    /* Méthode permettant l'acquisition du dernier post */
     $args = array(
-        'category__not_in' => 1
+    'posts_per_page'      => 1,
+    'post__in'            => get_option( 'sticky_posts' ),
+    'ignore_sticky_posts' => 1,
     );
-
-    $query = new WP_Query($args);
-
+    $query = new WP_Query( $args );
 ?>
 
 <div class="flex">
@@ -22,14 +22,23 @@ Template Name: Gabarit accueil
         <?php if($query->have_posts()) :?>
         <?php while($query->have_posts()) : $query->the_post( );?>
 
-        <article class="flex">
-            <!--Image article-->
-            <div class="image-article quart">
-                <?php if(has_post_thumbnail( )) :?>
-                    <?php the_post_thumbnail('small', ['class' => 'fluide']);?>
-                <?php endif;?>
-            </div>
+        <!--Statique-->
 
+        <article class="flex">
+            <div class="texte-article trois-quart">
+                <h2>Bienvenue sur Concerto !</h2>
+                <p>Concerto est un blog dédié à l’univers de la musique. Il s’agit d’un blog à caractère informatif, sur lequel vous trouverez des articles ayant principalement pour objectif de vous informer sur des artistes. Concerto est entretenue quotidiennement, par des passionné(e)s de musique bien entendu, mais également du web en général. Nous essayons de publier des articles le plus souvent possible, et nous vous invitons par ailleurs, à nous suggérer vos idées d’articles.</p>
+            </div>
+        </article>
+
+        <h2>Le dernier article :</h2>
+            <article class="flex">
+            <!--Image article-->
+                <div class="quart">
+                    <?php if(has_post_thumbnail( )) :?>
+                        <?php the_post_thumbnail('small', ['class' => 'fluide']);?>
+                    <?php endif;?>
+                </div>
             <!--Article (titre + Contenus)-->
             <div class="texte-article trois-quart">
                 <h3><?php the_title( );?></h3>
@@ -42,6 +51,8 @@ Template Name: Gabarit accueil
         <?php endif;?>
 
     </section>
+
+    <!--Sidebar-->
     <section class="quart sidebar">
         <?php get_sidebar(  ); ?>
     </section>

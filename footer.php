@@ -1,7 +1,7 @@
 </main>
     <footer>
         <div>
-            <p><b><?php bloginfo( 'name' )?>, tous droits réservés &copy<?php echo(date("Y/M")) ?></b></p>
+            <p><b>@<?php echo(date("Y/M")) ?>, Prevel. Réalisé dans le cadre scolaire de quatrième session au collégial.</b></p>
         </div>
     </footer>
     <?php wp_footer(  )?>
