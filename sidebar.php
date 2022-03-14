@@ -1,5 +1,5 @@
 <article>
-    <h3>Compléments</h3>
+    <h3>Extrait musicale :</h3>
 
     <div class="widget-container">
         <?php if(is_active_sidebar('widget-1')) : ?>
@@ -9,6 +9,7 @@
         <?php endif;?>
     </div>
 
+    <h3>Catégories :</h3>
     <div class="widget-container">
         <?php if(is_active_sidebar('widget-2')) : ?>
 

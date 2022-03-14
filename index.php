@@ -29,7 +29,7 @@
 
                     </div>
 
-                    <div class="texte-article trois-quart">
+                    <div class="trois-quart">
                         <!-- Récupération des articles (titre, contenu)-->
                         <h3><?php the_title(); ?></h3>
                         <p><?php the_excerpt();?> <a href="<?=the_permalink();?>"> En savoir plus... </a> </p>
@@ -42,18 +42,12 @@
             <?php endif; ?>
 
             </section>
-            <!--À MODIFIER !-->
+
+                <!--Sidebar-->
             <section class="quart sidebar">
-                <article>
-                    <h3>Sidebar</h3>
-                    <div class="widget-container">
-                        <!-- widget -->
-                    </div>
-                    <div class="widget-container">
-                        <!-- widget -->
-                    </div>
-                </article>
+                <?php get_sidebar(  ); ?>
             </section>
+            
         </div>
 
 <?php get_footer( ) ?>
