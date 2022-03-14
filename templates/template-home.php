@@ -25,7 +25,7 @@ Template Name: Gabarit accueil
         <!--Statique-->
 
         <article class="flex">
-            <div class="texte-article trois-quart">
+            <div class="trois-quart">
                 <h2>Bienvenue sur Concerto !</h2>
                 <p>Concerto est un blog dédié à l’univers de la musique. Il s’agit d’un blog à caractère informatif, sur lequel vous trouverez des articles ayant principalement pour objectif de vous informer sur des artistes. Concerto est entretenue quotidiennement, par des passionné(e)s de musique bien entendu, mais également du web en général. Nous essayons de publier des articles le plus souvent possible, et nous vous invitons par ailleurs, à nous suggérer vos idées d’articles.</p>
             </div>
@@ -40,7 +40,7 @@ Template Name: Gabarit accueil
                     <?php endif;?>
                 </div>
             <!--Article (titre + Contenus)-->
-            <div class="texte-article trois-quart">
+            <div class="trois-quart">
                 <h3><?php the_title( );?></h3>
                 <p><?php the_excerpt();?><a href="<?php the_permalink();?>">En savoir plus ...</a></p>
                 <p><?php the_tags()?></p>

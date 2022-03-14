@@ -20,7 +20,7 @@
 
                     </div>
 
-                    <div class="texte-article trois-quart">
+                    <div class="trois-quart">
                         <h3><?php the_title(); ?></h3>
                         <p><?php the_excerpt();?> <a href="<?=the_permalink();?>"> En savoir plus... </a> </p>
                         <p><?php the_tags()?></p>
