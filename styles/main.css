@@ -109,7 +109,7 @@ header {
   margin-bottom: 20px;
   background-image: url(../Header_background.jpg);
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -124,7 +124,7 @@ h1 a {
 }
 
 h1 a:hover {
-  color: #31c7ff ;
+  color: #31c7ff;
 }
 /* Menus */
 
@@ -147,6 +147,10 @@ ul {
   padding: 2px;
 }
 
+.cat-item a:hover {
+  color: #31c7ff;
+}
+
 .menu li {
   display: block;
 }
@@ -167,6 +171,15 @@ ul {
 }
 
 /* Contenus */
+
+.review-bloc {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.review-bloc p {
+  color: #8adfff;
+}
 
 .quart img {
   margin-top: 22px;
@@ -192,7 +205,7 @@ footer {
   height: 80px;
   border-top: 3px solid #ccc;
   margin-top: 30px;
-  text-align:center;
+  text-align: center;
   font-size: 1em;
 }
 
